@@ -68,9 +68,13 @@ while (i <= 10) {
 // Sekkizinci Task
 
 let arr = [5, 10, 15, 20];
+let p = 0;
 
 do {
-    console.log(arr.shift());
+    console.log(arr[p++]);
+    if (p === arr.length) {
+        arr.length = 0;
+    }
 } while (arr.length > 0)
 
 
