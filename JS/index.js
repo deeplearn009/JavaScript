@@ -68,9 +68,12 @@ while (i <= 10) {
 // Sekkizinci Task
 
 let arr = [5, 10, 15, 20];
-while (arr.length > 0) {
-    console.log(arr.shift()); // Ve ya .pop() ishletmek olar 20, 15, 10, 5 olsun deye
-}
+
+do {
+    console.log(arr.shift());
+} while (arr.length > 0)
+
+
 
 // Doqquzuncu Task
 
@@ -82,6 +85,13 @@ do {
 
 // Onuncu Task
 
+let k = 0;
+const a = 50;
+
+do {
+    console.log(k), k++;
+    
+} while (k < a)
 
 
 
