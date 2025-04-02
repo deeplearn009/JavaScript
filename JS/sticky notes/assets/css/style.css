@@ -41,32 +41,67 @@
 .container .window .btns #note:hover {
   background-color: rgb(49, 136, 49);
 }
-.container .window .btns button {
+.container .window .btns .colors {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.container .window .btns .colors #first {
+  background-color: yellow;
+}
+.container .window .btns .colors #second {
+  background-color: lightblue;
+}
+.container .window .btns .colors #third {
+  background-color: lightgreen;
+}
+.container .window .btns .colors #fourth {
+  background-color: rgb(197, 49, 197);
+}
+.container .window .btns .colors button {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   border: none;
   cursor: pointer;
+  transition: 0.5s;
 }
-.container .window ul,
-.container .window li {
+.container .window .btns .colors button:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.container .window .deletebtn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 24px;
+  height: 24px;
+  background-color: #ec0101;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2;
+}
+.container .window .notes {
+  flex-grow: 1;
+}
+.container .window .notes ul {
   list-style: none;
-}
-.container .window ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 50px;
+  gap: 20px;
+  justify-content: flex-start;
 }
-.container .window ul li a {
-  text-decoration: none;
-  color: #000;
-  background: gray;
-  display: block;
-  height: 180px;
-  width: 180px;
-  padding: 16px;
+.container .window .notes ul li {
+  position: relative;
 }
-.container .window ul li {
-  margin: 16px;
+.container .window textarea {
+  resize: none;
+  width: 200px;
+  height: 200px;
 }

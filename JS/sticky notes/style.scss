@@ -39,37 +39,75 @@
           background-color: rgb(49, 136, 49);
         }
       }
+      .colors {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
 
-      button {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        border: none;
-        cursor: pointer;
+        #first {
+          background-color: yellow;
+        }
+        #second {
+          background-color: lightblue;
+        }
+        #third {
+          background-color: lightgreen;
+        }
+        #fourth {
+          background-color: rgb(197, 49, 197);
+        }
+
+        button {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: none;
+          cursor: pointer;
+          transition: 0.5s;
+          &:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
+          }
+        }
       }
     }
 
-    ul,
-    li {
-      list-style: none;
-    }
-    ul {
+    .deletebtn {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      width: 24px;
+      height: 24px;
+      background-color: #ec0101;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      font-size: 14px;
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      margin-top: 50px;
+      align-items: center;
+      cursor: pointer;
+      z-index: 2;
     }
-    ul li a {
-      text-decoration: none;
-      color: #000;
-      background: gray;
-      display: block;
-      height: 180px;
-      width: 180px;
-      padding: 16px;
+    .notes {
+      flex-grow: 1;
+
+      ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: flex-start;
+      }
+
+      ul li {
+        position: relative;
+      }
     }
-    ul li {
-      margin: 16px;
+    textarea {
+      resize: none;
+      width: 200px;
+      height: 200px;
     }
   }
 }
