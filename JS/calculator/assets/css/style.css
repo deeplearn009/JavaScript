@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.container .card {
+  width: 350px;
+  height: 400px;
+  background-color: #c3c3c3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.container .card .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 20%;
+}
+.container .card .input input {
+  width: 100%;
+  padding-top: 10px;
+  font-size: 28px;
+  padding-left: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.container .card .numbers {
+  width: 90%;
+  height: 80%;
+  margin-top: 10px;
+}
+.container .card .numbers .btn {
+  width: 65px;
+  height: 60px;
+  font-size: 22px;
+  margin: 5px;
+  color: #FFF;
+  text-shadow: -1px -1px 0px #44006F;
+  background-color: #434343;
+  border-top: 2px solid #C1C1C1;
+  border-right: 2px solid #C1C1C1;
+  border-bottom: 2px solid #181818;
+  border-left: 2px solid #181818;
+  box-shadow: 0px 0px 2px #030303;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.container .card .numbers .clear {
+  background-color: red;
+}
+.container .card .btn:hover {
+  background-color: #FFBA75;
+  box-shadow: 0px 0px 2px #FFBA75, inset 0px -20px 1px #FF8000;
+  border-top: 2px solid #FFF;
+  border-right: 2px solid #FFF;
+  border-bottom: 2px solid #AE5700;
+  border-left: 2px solid #AE5700;
+  transition: 0.3s;
+}
