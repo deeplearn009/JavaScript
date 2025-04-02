@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato";
+  .window {
+    margin: 20px auto;
+    width: 100%;
+    padding: 5px;
+    background: #fff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .title {
+      font-size: 24px;
+    }
+    .btns {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      #note {
+        width: 150px;
+        height: 35px;
+        font-size: 18px;
+        background-color: rgb(64, 179, 64);
+        border: none;
+        border-radius: 6px;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+          background-color: rgb(49, 136, 49);
+        }
+      }
+
+      button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+    ul,
+    li {
+      list-style: none;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 50px;
+    }
+    ul li a {
+      text-decoration: none;
+      color: #000;
+      background: gray;
+      display: block;
+      height: 180px;
+      width: 180px;
+      padding: 16px;
+    }
+    ul li {
+      margin: 16px;
+    }
+  }
+}
